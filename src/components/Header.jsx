@@ -18,7 +18,7 @@ function Header() {
             <Nav.Link as={Link} to={'/services'}>Services</Nav.Link>
           </Nav>
           <Nav className="ms-auto">
-          <NavDropdown title="Profile" id="basic-nav-dropdown">
+            <NavDropdown title="Profile" id="basic-nav-dropdown">
               <NavDropdown.Item as={Link} to={'/login'}>Sign Up/Log In</NavDropdown.Item>
               <NavDropdown.Item as={Link} to={'/cart'}>Cart</NavDropdown.Item>
               <NavDropdown.Item as={Link} to={'/'}>Something</NavDropdown.Item>
