@@ -39,10 +39,24 @@ function Contact() {
     if (!contactFormData.email.trim()) {
       newErrors.email = 'Email is required';
       valid = false;
-    }else if(/[]/){//Regular expression
+    }else if(!/\S+@\S+\.\S+/.test(contactFormData.email.trim())){//Regular expression
       newErrors.email = "Enter a valid email!";
       valid = false;
     }
+
+    if (!contactFormData.phone.trim()) {
+      newErrors.phone = 'Phone number is required';
+      valid = false;
+    }else if(!/\d{10}$/.test(contactFormData.phone.trim())){
+      newErrors.phone = "Phone number must be 10 digits!";
+      valid = false;
+    }
+
+    if (!contactFormData.message.trim()) {
+      newErrors.message = 'Please enter a message';
+      valid = false;
+    }
+
 
     setErrors(newErrors);
     return valid;
@@ -52,11 +66,12 @@ function Contact() {
 
   const handleSubmit = (e) => {
 
+    const isValid = validateForm();
 
-    e.preventDefault();
-
-    if (validateForm()) {
+    if (isValid) {
       console.log("Form Submitted!", contactFormData);
+    }else{
+      e.preventDefault();
     }
 
   }

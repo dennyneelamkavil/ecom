@@ -9,6 +9,7 @@ import Services from "./pages/Services";
 import Login from "./pages/Login";
 import Cart from "./pages/Cart";
 import ProductDetails from "./components/ProductDetails";
+import AddProduct from "./admin/AddProduct";
 
 
 
@@ -25,6 +26,9 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/:id" element={<ProductDetails />} /> {/* Params */}
+
+        {/* Admin */}
+        <Route path="/admin/product/add" element={<AddProduct />} />
       </Routes>
       <Footer />
     </Router>

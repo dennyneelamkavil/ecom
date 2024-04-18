@@ -19,14 +19,14 @@ function Header() {
           </Nav>
           <Nav className="ms-auto">
             <NavDropdown title="Profile" id="basic-nav-dropdown">
-              <NavDropdown.Item as={Link} to={'/login'}>Sign Up/Log In</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to={'/admin/product/add'}>Add Product</NavDropdown.Item>
               <NavDropdown.Item as={Link} to={'/cart'}>Cart</NavDropdown.Item>
-              <NavDropdown.Item as={Link} to={'/'}>Something</NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item as={Link} to={'/'}>
                 Separated link
               </NavDropdown.Item>
             </NavDropdown>
+            <Nav.Link as={Link} to={'/login'}>Sign Up/Log In</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
