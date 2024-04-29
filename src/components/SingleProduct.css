@@ -1,0 +1,26 @@
+.product-card {
+    width: 100%;
+    max-width: 250px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+
+    &:hover {
+        transform: translateY(-5px);
+    }
+}
+
+.product-image {
+    width: 100%;
+    padding: 5%;
+}
+
+.product-button {
+    background-color: rgba(203, 44, 78, 0.516);
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+

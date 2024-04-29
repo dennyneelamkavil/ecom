@@ -61,7 +61,7 @@ function Home() {
     return (
         <>
             <HomeBanner />
-            <Container>
+            <Container className="d-flex flex-column align-items-center">
                 <Row>
                     <Col className="my-3">
                         <h2>
