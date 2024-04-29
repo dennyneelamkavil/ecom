@@ -93,7 +93,8 @@ function Contact() {
     <Container>
       <Row className='justify-content-center'>
         <Col md={6}>
-          <div className='shadow bg-white p-4 m-4' onSubmit={handleSubmit}>
+          <div className='shadow bg-white p-4 m-4 d-flex flex-column' onSubmit={handleSubmit}>
+            <h2 className='text-center'>Contact Us</h2>
             <form className='form-container my-4'>
               <input type="text" name='fullname' placeholder='Please enter fullname ' onChange={onChangeHandler} />
               <span className='error'>{errors?.fullname ?? ''}</span> {/* Nullish coalescing */}

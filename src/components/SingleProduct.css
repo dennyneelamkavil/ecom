@@ -1,4 +1,11 @@
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .product-card {
+    flex: 1 1 300px;
+    margin: 10px;
     width: 100%;
     max-width: 250px;
     text-align: center;
@@ -16,11 +23,15 @@
 }
 
 .product-button {
-    background-color: rgba(203, 44, 78, 0.516);
+    background-color: rgb(40, 141, 219);
     color: #fff;
     border: none;
     padding: 0.5rem 1rem;
     border-radius: 5px;
     cursor: pointer;
-}
+    transition: 0.3s ease-in-out;
 
+    &:hover{
+        background-color: rgb(45, 43, 188);
+    }
+}

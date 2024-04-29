@@ -6,7 +6,7 @@ import './SingleProduct.css'
 
 const SingleProduct = ({ product }) => {
     return (
-        <Col xs={12} sm={6} md={4} lg={3} className="mb-3">
+        <Col xs={12} sm={6} md={4} lg={3} className="mb-3 product-container">
             <Card className='product-card w-100'>
                 <Card.Img variant="top" src={product.image} className='product-image' />
                 <Card.Body>
@@ -15,7 +15,7 @@ const SingleProduct = ({ product }) => {
                         <b>{product.price}</b> <br />
                         {product.description}
                     </Card.Text>
-                    <Button variant="primary" as={Link} to={`/${product.id}`} className='product-button'>More Info</Button>
+                    <Button as={Link} to={`/${product.id}`} className='product-button'>More Info</Button>
                 </Card.Body>
             </Card>
         </Col>
