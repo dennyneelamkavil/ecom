@@ -1,4 +1,7 @@
-footer {
-    background-color: black;
-    color: white;
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 4%;
+    font-size: 0.75rem;
 }

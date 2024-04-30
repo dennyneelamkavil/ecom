@@ -46,7 +46,7 @@ const AddProduct = () => {
 
     return (
         <Container>
-            <Row>
+            <Row className='text-center py-2'>
                 <Col>
                     <h2>
                         Add Product
@@ -56,17 +56,17 @@ const AddProduct = () => {
             <Row className='justify-content-center'>
                 <Col md={4} className='mb-3 shadow p-4'>
                     <Form noValidate validated={validated} onSubmit={handleSubmit}>
-                        <Row className="mb-3">
+                        <Row>
                             <Form.Group className='position-relative'>
                                 <Form.Label>Product Name</Form.Label>
                                 <Form.Control
                                     required
                                     type="text"
-                                    placeholder="Product Name"
+                                    placeholder="Please enter a Product Name"
                                     name='productName'
                                     onChange={onChangeHandler}
                                 />
-                                <Form.Control.Feedback type='invalid' tooltip>
+                                <Form.Control.Feedback type='invalid'>
                                     Please enter a product name
                                 </Form.Control.Feedback>
                                 <Form.Control.Feedback tooltip>
@@ -80,7 +80,7 @@ const AddProduct = () => {
                                 <Form.Control
                                     required
                                     type="text"
-                                    placeholder="Product Category"
+                                    placeholder="Please enter a Product Category"
                                     name='category'
                                     onChange={onChangeHandler}
                                 />
@@ -94,7 +94,7 @@ const AddProduct = () => {
 
                                 <Form.Control
                                     type="text"
-                                    placeholder="Price"
+                                    placeholder="Please enter the Price"
                                     aria-describedby="inputGroupPrepend"
                                     required
                                     name='price'

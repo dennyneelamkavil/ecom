@@ -1,6 +1,8 @@
 .product-container {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+
 }
 
 .product-card {
@@ -31,7 +33,7 @@
     cursor: pointer;
     transition: 0.3s ease-in-out;
 
-    &:hover{
+    &:hover {
         background-color: rgb(45, 43, 188);
     }
 }

@@ -20,10 +20,10 @@ function Login() {
 
   return (
     <Container>
-      <Row>
+      <Row className='text-center py-2'>
         <Col>
           <h2>
-            Login/Sign Up
+            Login
           </h2>
         </Col>
       </Row>
@@ -41,7 +41,7 @@ function Login() {
           >
             {({ handleSubmit, handleChange, values, touched, errors }) => (
               <Form noValidate onSubmit={handleSubmit}>
-                <Row className="mb-3">
+                <Row>
                   <Form.Group
                     controlId="validationFormik101"
                     className="position-relative"
@@ -50,6 +50,7 @@ function Login() {
                     <Form.Control
                       type="text"
                       name="fullName"
+                      placeholder='Please enter your Fullname'
                       value={values.fullName}
                       onChange={handleChange}
                       isInvalid={!!errors.fullName}
@@ -68,6 +69,7 @@ function Login() {
                     <Form.Control
                       type="text"
                       name="email"
+                      placeholder='Please enter your Email'
                       value={values.email}
                       onChange={handleChange}
                       isInvalid={!!errors.email}
@@ -86,7 +88,7 @@ function Login() {
                     <Form.Label>Password</Form.Label>
                     <Form.Control
                       type="password"
-                      placeholder="Password"
+                      placeholder="Please enter Password"
                       name="password"
                       value={values.password}
                       onChange={handleChange}
@@ -105,7 +107,7 @@ function Login() {
                     <Form.Label>Confirm Password</Form.Label>
                     <Form.Control
                       type="password"
-                      placeholder="Confirm Password"
+                      placeholder="Please Confirm your Password"
                       name="confirmPassword"
                       value={values.confirmPassword}
                       onChange={handleChange}

@@ -12,7 +12,7 @@ const SingleProduct = ({ product }) => {
                 <Card.Body>
                     <Card.Title>{product.name}</Card.Title>
                     <Card.Text>
-                        <b>{product.price}</b> <br />
+                        <b>₹ {product.price}</b> <br />
                         {product.description}
                     </Card.Text>
                     <Button as={Link} to={`/${product.id}`} className='product-button'>More Info</Button>
