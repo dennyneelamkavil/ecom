@@ -90,7 +90,7 @@ function Contact() {
 
 
   return (
-    <Container>
+    <Container className='vh-100 align-content-center'>
       <Row className='justify-content-center'>
         <Col md={6}>
           <div className='shadow bg-white p-4 m-4 d-flex flex-column' onSubmit={handleSubmit}>

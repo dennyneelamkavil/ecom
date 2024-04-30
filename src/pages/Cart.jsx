@@ -5,7 +5,7 @@ import './dev.css';
 
 function Cart() {
   return (
-    <div className='d-flex flex-column align-items-center text-center'>
+    <div className='d-flex flex-column align-items-center text-center vh-100'>
       <h1>
         Cart
       </h1>

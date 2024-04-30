@@ -4,7 +4,7 @@ import './dev.css';
 
 function About() {
   return (
-    <div className='d-flex flex-column align-items-center text-center'>
+    <div className='d-flex flex-column align-items-center text-center vh-100'>
       <h1>
         About Page
       </h1>

@@ -45,7 +45,7 @@ const AddProduct = () => {
     }
 
     return (
-        <Container>
+        <Container className='vh-100 align-content-center'>
             <Row className='text-center py-2'>
                 <Col>
                     <h2>
